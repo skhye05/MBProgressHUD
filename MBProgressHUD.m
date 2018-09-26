@@ -82,6 +82,10 @@ static const CGFloat MBDefaultDetailsLabelFontSize = 12.f;
     return nil;
 }
 
+- (void) invokeBlock:(id)sender {
+    self.simpleBlock();
+}
+
 #pragma mark - Lifecycle
 
 - (void)commonInit {
