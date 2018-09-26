@@ -214,6 +214,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (assign, nonatomic) MBProgressHUDMode mode;
 
+@property (nonatomic, copy) void (^simpleBlock)(void);
+
+- (void) invokeBlock:(id)sender;
+
 /**
  * A color that gets forwarded to all labels and supported indicators. Also sets the tintColor
  * for custom views on iOS 7+. Set to nil to manage color individually.
